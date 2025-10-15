@@ -1,1 +1,1 @@
-var o=document.querySelector(".oooo");
+var e=document.querySelector(".main-header__toggle"),t=document.querySelector(".navigation__list");e&&t&&e.addEventListener("click",()=>{e.classList.toggle("main-header__toggle--active"),t.classList.toggle("navigation__list--close")});
