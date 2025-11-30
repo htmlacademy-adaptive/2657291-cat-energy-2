@@ -27,7 +27,7 @@
   grid-template-columns: min-content 1fr min-content;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px 14px;
+  padding: 13px 20px;
   margin: 0 auto;
   position: relative;
 
@@ -56,7 +56,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 90px;
+    margin-right: 92px;
     width: 174px;
   }
 

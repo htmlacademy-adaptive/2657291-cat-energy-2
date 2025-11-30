@@ -7,15 +7,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: rgba(104, 183, 56, 0.85);
   padding: 0 25px 15px 23px;
   position: relative;
-  margin: 37px 0 0;
+  margin: 35px 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 70px 0 0;
+    margin: 68px 0 0;
     padding: 0 25px 41px 23px;
     min-height: 0;
     min-width: 708px;
+    background-position: 9px -320px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -27,6 +29,7 @@
     width: 245px;
     padding: 0 25px 10px 23px;
     margin: 1px 79px 0 0;
+    background-position: -35px 0;
   }
 
   &::before {

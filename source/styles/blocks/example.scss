@@ -86,7 +86,7 @@
     grid-column: 1/-1;
     font-size: 60px;
     line-height: 60px;
-    padding: 44px 0 22px 30px;
+    padding: 40px 0 22px 30px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -113,7 +113,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 17px 15px 56px 30px;
+    padding: 20px 15px 56px 30px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -183,7 +183,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    padding: 12px 20px 16px;
+    padding: 12px 20px 21px;
   }
 }
 
@@ -316,14 +316,14 @@
     content: "";
     position: relative;
     display: block;
-    left: -19px;
+    left: -18px;
     top: -20px;
     height: 40px;
     width: 40px;
     mask-image: url("/icons/stack-vector.svg");
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-size: 28px;
+    mask-size: 24px;
     background-color: rgba(102, 102, 102, 1);
   }
 
@@ -331,12 +331,13 @@
     content: "";
     position: relative;
     display: block;
-    left: -19px;
+    left: -18px;
     top: 20px;
     height: 40px;
-    width: 40px;
+    width: 42px;
     border: solid 2px rgba(102, 102, 102, 1);
     border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
   }
 
   &:hover {
@@ -352,7 +353,7 @@
 
 .example__slider {
   padding-bottom: 31px;
-  margin: -9px auto 20px;
+  margin: -9px auto 19px;
   position: relative;
   min-width: 280px;
   min-height: 256px;
@@ -363,7 +364,7 @@
     min-width: 560px;
     min-height: 512px;
     padding-bottom: 102px;
-    margin: 0 auto 106px;
+    margin: 0 auto 105px;
   }
 
   @media (min-width: $desktop-width-min) {
