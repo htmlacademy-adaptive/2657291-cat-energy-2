@@ -74,6 +74,7 @@
   height: 60px;
   grid-column: 1/2;
   grid-row: 1/2;
+  background-color: rgba(104, 183, 56, 1);
 
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
@@ -84,7 +85,6 @@
     display: block;
     width: 80px;
     height: 80px;
-
     content: counter (flag);
   }
 
@@ -99,12 +99,6 @@
 .description__item--one {
   margin: 0;
 
-  &::before {
-    background-image: url("/icons/sheet.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -118,12 +112,6 @@
 .description__item--two {
   margin: 0;
 
-  &::before {
-    background-image: url("/icons/powder.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -136,12 +124,6 @@
 .description__item--tree {
   margin: 0;
 
-  &::before {
-    background-image: url("/icons/tableware.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -153,13 +135,6 @@
 
 .description__item--four {
   margin: 0;
-
-  &::before {
-    background-image: url("/icons/clock.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 0;
-  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -235,5 +210,77 @@
   @media (min-width: $desktop-width-min) {
     padding: 0;
     grid-column: 1/-1;
+  }
+}
+
+.description__item--one .description__text {
+  &::after {
+    content: "";
+    width: 29px;
+    height: 28px;
+    position: absolute;
+    top: 12px;
+    left: -63px;
+    background-image: url("/icons/sheet-1.1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: -80px;
+      left: 25px;
+    }
+  }
+}
+
+.description__item--two .description__text::after {
+  content: "";
+  width: 29px;
+  height: 28px;
+  position: absolute;
+  top: 14px;
+  left: -64px;
+  background-image: url("/icons/powder-1.1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: -80px;
+    left: 25px;
+  }
+}
+
+.description__item--tree .description__text::after {
+  content: "";
+  width: 29px;
+  height: 28px;
+  position: absolute;
+  top: 12px;
+  left: -64px;
+  background-image: url("/icons/tableware-1.1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: -82px;
+    left: 26px;
+  }
+}
+
+.description__item--four .description__text::after {
+  content: "";
+  width: 29px;
+  height: 28px;
+  position: absolute;
+  top: 14px;
+  left: -63px;
+  background-image: url("/icons/clock-1.1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: -82px;
+    left: 26px;
   }
 }
