@@ -1,1 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*a {
+  display: block;
+  text-decoration: none;
+}
+
+*img {
+  display: block;
+}
+
+.page__body {
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.button {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: $light-color;
+  padding: 10px;
+  background-color: rgba(104, 183, 56, 1);
+  border: none;
+}
+
+
 /* здесь используйте глобальные селекторы img, body, html и так далее */

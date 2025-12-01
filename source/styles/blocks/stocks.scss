@@ -1,0 +1,91 @@
+.stocks {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  min-width: 280px;
+  min-height: 290px;
+  background-image: url("/images/cat-bag-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(104, 183, 56, 0.85);
+  padding: 0 25px 15px 23px;
+  position: relative;
+  margin: 35px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 68px 0 0;
+    padding: 0 25px 41px 23px;
+    min-height: 0;
+    min-width: 708px;
+    background-position: 9px -320px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: grid;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    align-items: center;
+    min-width: 0;
+    width: 245px;
+    padding: 0 25px 10px 23px;
+    margin: 1px 79px 0 0;
+    background-position: -35px 0;
+  }
+
+  &::before {
+    content: "Закажите все и\00A0получите чехол для кота в подарок!";
+    position: relative;
+    top: 186px;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    color: $light-color;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 72px;
+      left: 488px;
+      width: 27%;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      top: 163px;
+      left: 0;
+      width: 100%;
+      padding: 0 15px 79px;
+      text-align: center;
+      transform: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    top: -78px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 78px;
+    height: 80px;
+    background-image: url("/icons/icon_gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: -21px;
+      left: 94px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      top: -111px;
+      left: 100px;
+    }
+  }
+}
