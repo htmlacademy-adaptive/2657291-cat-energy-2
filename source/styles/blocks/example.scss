@@ -17,7 +17,7 @@
 .example__container {
   position: relative;
   display: grid;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   row-gap: 20px;
   margin: 0 auto;
 
@@ -51,11 +51,14 @@
   grid-template-columns: 1fr;
   height: fit-content;
   z-index: 3;
+  margin: 0 0 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0 0 58px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -67,6 +70,7 @@
     background-image: linear-gradient(rgba(242, 242, 242, 1) 82px, rgba(242, 242, 242, 1) 82px 511px);
     background-size: cover;
     z-index: 1;
+    padding: 0;
   }
 }
 
@@ -365,13 +369,13 @@
   margin: -9px auto 19px;
   position: relative;
   min-width: 280px;
-  min-height: 256px;
+  height: 256px;
 
   @media (min-width: $tablet-width) {
     grid-row: 3/-1;
     grid-column: 1/-1;
     min-width: 560px;
-    min-height: 512px;
+    height: 512px;
     padding-bottom: 102px;
     margin: 0 auto 105px;
   }
