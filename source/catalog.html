@@ -9,8 +9,10 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/">
   <link rel="manifest" href="manifest.json">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -32,7 +34,7 @@
         </picture>
       </a>
 
-      <nav class="navigation">
+      <nav class="navigation navigation--nojs">
         <ul class="navigation__list navigation__list--close">
           <li class="navigation__item">
             <a href="index.html">
@@ -67,7 +69,9 @@
         <ul class="catalog__list">
           <li class="catalog-item">
             <div class="catalog-item__text-wrapper">
-              <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog-item__title">
+                <a href="#">Cat Energy PRO 500 г</a>
+              </h3>
               <dl class="catalog-item__description-list">
                 <div class="catalog-item__description-wrapper">
                   <dt class="catalog-item__term">Масса</dt>
@@ -84,18 +88,25 @@
               </dl>
             </div>
             <div class="catalog-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/chicken-500-decktop@1x.png, images/chicken-500-decktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/chicken-500-tablet@1x.png, images/chicken-500-tablet@2x.png 2x">
-                <img class="catalog-item__images" src="images/chicken-500@1x.jpg" srcset="images/chicken-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro курица 500гр">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="images/chicken-500-decktop@1x.webp,  images/chicken-500-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-500-tablet@1x.webp, images/chicken-500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/chicken-500@1x.webp, images/chicken-500@2x.webp 2x">
+                  <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/chicken-500-decktop@1x.png, images/chicken-500-decktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/chicken-500-tablet@1x.png, images/chicken-500-tablet@2x.png 2x">
+                  <img class="catalog-item__images" src="images/chicken-500@1x.jpg" srcset="images/chicken-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro курица 500гр">
+                </picture>
+              </a>
             </div>
             <a class="button button--order" href="#">Заказать</a>
           </li>
 
           <li class="catalog-item">
             <div class="catalog-item__text-wrapper">
-              <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
+              <h3 class="catalog-item__title">
+                <a href="#">Cat Energy PRO 1000 г</a>
+              </h3>
               <dl class="catalog-item__description-list">
                 <div class="catalog-item__description-wrapper">
                   <dt class="catalog-item__term">Масса</dt>
@@ -112,18 +123,25 @@
               </dl>
             </div>
             <div class="catalog-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/chicken-1000-decktop@1x.png, images/chicken-1000-decktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/chicken-1000-tablet@1x.png, images/chicken-1000-tablet@2x.png 2x">
-                <img class="catalog-item__images" src="images/chicken-1000@1x.jpg" srcset="images/chicken-1000@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro курица 1000гр">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="images/chicken-1000-decktop@1x.webp,  images/chicken-1000-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-1000-tablet@1x.webp, images/chicken-1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/chicken-1000@1x.webp, images/chicken-1000@2x.webp 2x">
+                  <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/chicken-1000-decktop@1x.png, images/chicken-1000-decktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/chicken-1000-tablet@1x.png, images/chicken-1000-tablet@2x.png 2x">
+                  <img class="catalog-item__images" src="images/chicken-1000@1x.jpg" srcset="images/chicken-1000@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro курица 1000гр">
+                </picture>
+              </a>
             </div>
             <a class="button button--order" href="#">Заказать</a>
           </li>
 
           <li class="catalog-item">
             <div class="catalog-item__text-wrapper">
-              <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog-item__title">
+                <a href="#">Cat Energy PRO 500 г</a>
+              </h3>
               <dl class="catalog-item__description-list">
                 <div class="catalog-item__description-wrapper">
                   <dt class="catalog-item__term">Масса</dt>
@@ -140,18 +158,25 @@
               </dl>
             </div>
             <div class="catalog-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/fish-500-desktop@1x.png, images/fish-500-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/fish-500-tablet@1x.png, images/fish-500-tablet@2x.png 2x">
-                <img class="catalog-item__images" src="images/fish-500@1x.jpg" srcset="images/fish-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Рыба 500гр">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="images/fish-500-decktop@1x.webp,  images/fish-500-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-500-tablet@1x.webp, images/fish-500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/fish-500@1x.webp, images/fish-500@2x.webp 2x">
+                  <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/fish-500-desktop@1x.png, images/fish-500-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/fish-500-tablet@1x.png, images/fish-500-tablet@2x.png 2x">
+                  <img class="catalog-item__images" src="images/fish-500@1x.jpg" srcset="images/fish-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Рыба 500гр">
+                </picture>
+              </a>
             </div>
             <a class="button button--order" href="#">Заказать</a>
           </li>
 
           <li class="catalog-item">
             <div class="catalog-item__text-wrapper">
-              <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
+              <h3 class="catalog-item__title">
+                <a href="#">Cat Energy PRO 1000 г</a>
+              </h3>
               <dl class="catalog-item__description-list">
                 <div class="catalog-item__description-wrapper">
                   <dt class="catalog-item__term">Масса</dt>
@@ -168,18 +193,25 @@
               </dl>
             </div>
             <div class="catalog-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/fish-1000-decktop@1x.png, images/fish-1000-decktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/fish-1000-tablet@1x.png, images/fish-1000-tablet@2x.png 2x">
-                <img class="catalog-item__images" src="images/fish-1000@1x.jpg" srcset="images/fish-1000@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Рыба 1000гр">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="images/fish-1000-decktop@1x.webp,  images/fish-1000-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-1000-tablet@1x.webp, images/fish-1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/fish-1000@1x.webp, images/fish-1000@2x.webp 2x">
+                  <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/fish-1000-decktop@1x.png, images/fish-1000-decktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/fish-1000-tablet@1x.png, images/fish-1000-tablet@2x.png 2x">
+                  <img class="catalog-item__images" src="images/fish-1000@1x.jpg" srcset="images/fish-1000@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Рыба 1000гр">
+                </picture>
+              </a>
             </div>
             <a class="button button--order" href="#">Заказать</a>
           </li>
 
           <li class="catalog-item">
             <div class="catalog-item__text-wrapper">
-              <h3 class="catalog-item__title">Cat Energy Slim 500 г</h3>
+              <h3 class="catalog-item__title">
+                <a href="#">Cat Energy Slim 500 г</a>
+              </h3>
               <dl class="catalog-item__description-list">
                 <div class="catalog-item__description-wrapper">
                   <dt class="catalog-item__term">Масса</dt>
@@ -196,18 +228,25 @@
               </dl>
             </div>
             <div class="catalog-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/buckwheat-500-decktop@1x.png, images/buckwheat-500-decktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/buckwheat-500-tablet@1x.png, images/buckwheat-500-tablet@2x.png 2x">
-                <img class="catalog-item__images" src="images/buckwheat-500@1x.jpg" srcset="images/buckwheat-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Гречка 500гр">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="images/buckwheat-500-decktop@1x.webp,  images/buckwheat-500-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.webp, images/buckwheat-500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/buckwheat-500@1x.webp, images/buckwheat-500@2x.webp 2x">
+                  <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/buckwheat-500-decktop@1x.png, images/buckwheat-500-decktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/buckwheat-500-tablet@1x.png, images/buckwheat-500-tablet@2x.png 2x">
+                  <img class="catalog-item__images" src="images/buckwheat-500@1x.jpg" srcset="images/buckwheat-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Гречка 500гр">
+                </picture>
+              </a>
             </div>
             <a class="button button--order" href="#">Заказать</a>
           </li>
 
           <li class="catalog-item">
             <div class="catalog-item__text-wrapper">
-              <h3 class="catalog-item__title">Cat Energy Slim 1000 г</h3>
+              <h3 class="catalog-item__title">
+                <a href="#">Cat Energy Slim 1000 г</a>
+              </h3>
               <dl class="catalog-item__description-list">
                 <div class="catalog-item__description-wrapper">
                   <dt class="catalog-item__term">Масса</dt>
@@ -224,18 +263,25 @@
               </dl>
             </div>
             <div class="catalog-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/buckwheat-1000-decktop@1x.png, images/buckwheat-1000-decktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/buckwheat-1000-tablet@1x.png, images/buckwheat-1000-tablet@2x.png 2x">
-                <img class="catalog-item__images" src="images/buckwheat-1000@1x.jpg" srcset="images/buckwheat-1000@2x.jpg" width="140" height="107" alt="Баночка питания Cat Energu Pro Гречка 1000гр">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="images/buckwheat-1000-decktop@1x.webp,  images/buckwheat-1000-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.webp, images/buckwheat-1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/buckwheat-1000@1x.webp, images/buckwheat-1000@2x.webp 2x">
+                  <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/buckwheat-1000-decktop@1x.png, images/buckwheat-1000-decktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/buckwheat-1000-tablet@1x.png, images/buckwheat-1000-tablet@2x.png 2x">
+                  <img class="catalog-item__images" src="images/buckwheat-1000@1x.jpg" srcset="images/buckwheat-1000@2x.jpg" width="140" height="107" alt="Баночка питания Cat Energu Pro Гречка 1000гр">
+                </picture>
+              </a>
             </div>
             <a class="button button--order" href="#">Заказать</a>
           </li>
 
           <li class="catalog-item">
             <div class="catalog-item__text-wrapper">
-              <h3 class="catalog-item__title">Cat Energy Slim 500 г</h3>
+              <h3 class="catalog-item__title">
+                <a href="#">Cat Energy Slim 500 г</a>
+              </h3>
               <dl class="catalog-item__description-list">
                 <div class="catalog-item__description-wrapper">
                   <dt class="catalog-item__term">Масса</dt>
@@ -252,17 +298,24 @@
               </dl>
             </div>
             <div class="catalog-item__img-wrapper">
-              <picture>
-                <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/rice-500-decktop@1x.png, images/rice-500-decktop@2x.png 2x">
-                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/rice-500-tablet@1x.png, images/rice-500-tablet@2x.png 2x">
-                <img class="catalog-item__images" src="images/rice-500@1x.jpg" srcset="images/rice-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Рис 500гр">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="images/rice-500-decktop@1x.webp,  images/rice-500-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/rice-500-tablet@1x.webp, images/rice-500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/rice-500@1x.webp, images/rice-500@2x.webp 2x">
+                  <source media="(min-width: 1280px)" width="169" height="210" type="image/png" srcset="images/rice-500-decktop@1x.png, images/rice-500-decktop@2x.png 2x">
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/rice-500-tablet@1x.png, images/rice-500-tablet@2x.png 2x">
+                  <img class="catalog-item__images" src="images/rice-500@1x.jpg" srcset="images/rice-500@2x.jpg 2x" width="140" height="107" alt="Баночка питания Cat Energu Pro Рис 500гр">
+                </picture>
+              </a>
             </div>
             <a class="button button--order" href="#">Заказать</a>
           </li>
 
           <li class="catalog-item catalog-item--special">
-            <h3 class="catalog-item__title catalog-item__title--special">Показать еще 100500 товаров</h3>
+            <h3 class="catalog-item__title catalog-item__title--special">
+              <a href="#">Показать еще 100500 товаров</a>
+            </h3>
             <p class="catalog-item__text">На самом деле вкусов гораздо больше!</p>
             <a class="button button--more" href="#">показать все</a>
           </li>
@@ -346,6 +399,9 @@
             title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
           </iframe>
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="images/map-desktop@1x.webp,  images/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp, images/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp, map-mobile@2x.webp 2x">
             <source media="(min-width: 1280px)" width="1280" height="400" type="image/png" srcset="images/Map-desktop@1x.png, images/Map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/Map-tablet@1x.png, images/Map-tablet@2x.png 2x">
             <img class="contacts__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">

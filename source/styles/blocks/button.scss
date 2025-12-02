@@ -26,9 +26,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 295px;
-    left: 120px;
+    position: static;
     font-size: 20px;
     line-height: 26px;
     padding: 14px 25px 14px 26px;
@@ -37,14 +35,9 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    position: relative;
-    top: 292px;
-    left: 190px;
-    height: fit-content;
+    position: static;
     padding: 14px 25px;
     display: block;
-    grid-column: 1/2;
-    grid-row: 1/2;
     font-size: 20px;
     line-height: 26px;
     width: 244px;

@@ -287,6 +287,7 @@
   border-radius: 2px;
   padding: 0;
   border: transparent;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -340,14 +341,22 @@
     background-color: rgba(255, 255, 255, 1);
   }
 
-  &:hover {
-    background-color: rgba(104, 183, 56, 1);
-    filter: invert(47%) sepia(85%) saturate(1337%) hue-rotate(87deg) brightness(97%) contrast(93%);
+  &:hover::before {
+    border-color: rgba(104, 183, 56, 1);
   }
 
-  &:active {
+  &:hover,
+  &:hover::after {
+    background-color: rgba(104, 183, 56, 1);
+  }
+
+  &:active::before {
+    border-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active,
+  &:active::after {
     background-color: rgba(94, 170, 47, 1);
-    opacity: 60%;
   }
 }
 

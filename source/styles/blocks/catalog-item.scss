@@ -32,6 +32,11 @@
   }
 }
 
+.catalog-item__title a {
+  color: rgba(34, 34, 34, 1);
+  cursor: pointer;
+}
+
 .catalog-item__text-wrapper {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -59,6 +64,10 @@
   @media (min-width: $tablet-width) {
     order: -1;
   }
+}
+
+.catalog-item__img-wrapper a {
+  cursor: pointer;
 }
 
 .catalog-item__title {

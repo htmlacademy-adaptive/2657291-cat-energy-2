@@ -6,14 +6,16 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 30px 525px;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width-min) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 0 320px;
+    padding: 0 30px 265px;
     width: 100%;
+    max-width: 1280px;
 
     &::before {
       content: "";
@@ -36,27 +38,37 @@
 .promo__container {
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 0 90px;
+    position: relative;
+  }
+
   @media (min-width: $desktop-width-min) {
-    grid-column: 1/-1;
-    max-width: 1440px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-column: 1/2;
+    max-width: 620px;
+    margin: 0;
+    padding: 59px 0 0 80px;
   }
 }
 
 .promo__wrapper-img {
   position: absolute;
-  top: 167px;
+  bottom: 42px;
   left: 50%;
   transform: translate(-50%);
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: auto;
+    left: 30px;
+    bottom: -2px;
     transform: none;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 2/3;
+    position: static;
   }
 }
 
@@ -94,9 +106,8 @@
     grid-column: 1/2;
     grid-row: 1/2;
     width: 80%;
-    padding: 0 43px 0 25px;
-    display: grid;
-    justify-content: end;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -109,13 +120,13 @@
   color: $light-color;
   position: relative;
   z-index: 2;
-  padding: 27px 0 25px;
+  padding: 27px 20px 25px;
   margin: 0;
   letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     color: $title-color;
-    margin: 65px 89px 0;
+    margin: 0;
     padding: 0;
     text-align: left;
     font-size: 60px;
@@ -123,7 +134,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 60px 0 0 76px;
+    margin: 0;
     padding: 0;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -143,11 +154,11 @@
   position: relative;
   z-index: 2;
   margin: 0 0 0 -1px;
-  padding: 0 0 114px;
+  padding: 0 20px 114px;
 
   @media (min-width: $tablet-width) {
     color: $title-color;
-    margin: 40px 90px 0;
+    margin: 43px 0 29px;
     padding: 0 0 20px;
     text-align: left;
     font-size: 20px;
@@ -156,7 +167,7 @@
 
   @media (min-width: $desktop-width-min) {
     color: $title-color;
-    margin: 40px 0 32px 75px;
+    margin: 40px 0 32px;
     padding: 0 0 20px;
     text-align: left;
     font-size: 20px;

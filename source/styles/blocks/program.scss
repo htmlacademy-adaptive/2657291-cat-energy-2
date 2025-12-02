@@ -61,7 +61,7 @@
   grid-row: 1/2;
   grid-column: 2/-1;
   margin: 4px 0 0 5px;
-
+  
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -96,7 +96,7 @@
 }
 
 .program__text {
-  font-family: $dark-color;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
