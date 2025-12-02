@@ -46,6 +46,7 @@
   min-width: 33px;
   margin: 1px 10px 0 0;
   cursor: pointer;
+  display: block;
 
   &:hover {
     opacity: 80%;
@@ -72,6 +73,7 @@
   padding: 2px 0 0;
   justify-self: center;
   transform: translate(-9px);
+  display: block;
 
   @media (min-width: 768px) {
     display: none;

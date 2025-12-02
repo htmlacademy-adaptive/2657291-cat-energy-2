@@ -292,7 +292,7 @@
     position: absolute;
     top: 2%;
     left: 49.5%;
-    height: 100%;
+    height: 512px;
     width: 4px;
     background-color: rgba(102, 102, 102, 1);
     border-radius: 2px;
@@ -304,7 +304,7 @@
     position: absolute;
     top: 12px;
     left: 48%;
-    height: 82%;
+    height: 512px;
     width: 4px;
     background-color: rgba(102, 102, 102, 1);
     border-radius: 2px;
@@ -323,8 +323,8 @@
     mask-image: url("/icons/stack-vector.svg");
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-size: 24px;
     background-color: rgba(102, 102, 102, 1);
+    mask-size: 24px;
   }
 
   &::before {
@@ -410,6 +410,7 @@
 
 .example__img-fat {
   object-fit: cover;
+  display: block;
 }
 
 .example__slider-right {
@@ -445,4 +446,5 @@
   object-fit: cover;
   position: relative;
   right: 100%;
+  display: block;
 }
