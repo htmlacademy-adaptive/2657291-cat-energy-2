@@ -21,7 +21,7 @@
       content: "";
       background-image:
         linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("/images/promo-background-desktop@1x.png");
+        url("/images/promo-background-desktop@1x.jpg");
       background-position: 100%, 100%;
       background-repeat: no-repeat, no-repeat;
       background-size: cover, cover;
@@ -89,7 +89,7 @@
 
 .promo__wrapper-text {
   position: relative;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.jpg");
   background-position: center;
   background-size: cover;
   padding-bottom: 50px;

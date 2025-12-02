@@ -26,12 +26,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: static;
+    position: relative;
     font-size: 20px;
     line-height: 26px;
     padding: 14px 25px 14px 26px;
     margin: 0;
     width: 242px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width-min) {

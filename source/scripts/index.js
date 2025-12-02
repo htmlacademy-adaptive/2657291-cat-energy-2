@@ -11,17 +11,12 @@ if (navElement) {
       navElement.classList.remove('navigation--close');
       navElement.classList.add('navigation--open');
 
-      console.log('Привет');
-
     } else {
       navElement.classList.remove('navigation--open');
       navElement.classList.add('navigation--close');
     }
   });
 }
-
-
-
 /* const headerToggle = document.querySelector('.navigation__toggle');
 const navList = document.querySelector('.navigation__list');
 
