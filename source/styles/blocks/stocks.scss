@@ -3,7 +3,7 @@
   grid-template-rows: 1fr 1fr;
   min-width: 280px;
   min-height: 290px;
-  background-image: url("/images/cat-bag-mobile@1x.png");
+  background-image: url("/images/cat-bag-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,7 +17,10 @@
     padding: 0 25px 41px 23px;
     min-height: 0;
     min-width: 708px;
-    background-position: 9px -320px;
+    background-image: url("/images/cat-bag-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -29,7 +32,7 @@
     width: 245px;
     padding: 0 25px 10px 23px;
     margin: 1px 79px 0 0;
-    background-position: -35px 0;
+    background-image: url("/images/cat-bag-decktop@1x.jpg");
   }
 
   &::before {
@@ -56,7 +59,7 @@
     }
 
     @media (min-width: $desktop-width-min) {
-      top: 163px;
+      top: 118%;
       left: 0;
       width: 100%;
       padding: 0 15px 79px;
@@ -84,7 +87,7 @@
     }
 
     @media (min-width: $desktop-width-min) {
-      top: -111px;
+      top: -79%;
       left: 100px;
     }
   }
