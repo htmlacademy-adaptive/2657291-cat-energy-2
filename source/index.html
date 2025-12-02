@@ -9,6 +9,10 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/">
   <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff" as="font" type="font/woff">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff" as="font" type="font/woff">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -30,8 +34,8 @@
         </picture>
       </a>
 
-      <nav class="navigation">
-        <ul class="navigation__list navigation__list--close">
+      <nav class="navigation navigation--nojs">
+        <ul class="navigation__list">
           <li class="navigation__item navigation__item--active navigation__item--special--active">
             <a href="#">
               Главная
@@ -61,18 +65,22 @@
     <h1 class="visually-hidden">Функциональное <br>
       питание для котов Cat Energy</h1>
     <section class="section promo" data-test="hero">
+      <div class="promo__wrapper-img">
+        <picture>
+          <source type="image/webp" media="(min-width: 1280px)" srcset="images/promo-decktop@1x.webp,  images/promo-decktop@2x.webp 2x" width="552" height="499">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-tablet@1x.webp, images/promo-tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="images/promo@1x.webp, images/promo@2x.webp 2x" width="280" height="270">
+
+          <source media="(min-width: 1280px)" width="552" height="499" type="image/png" srcset="images/promo-decktop@1x.png, images/promo-decktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo-tablet@1x.png, images/promo-tablet@2x.png 2x">
+          <img class="promo__images" src="images/promo@1x.png" srcset="images/promo@2x.png" width="280" height="270" alt="Баночка питания Cat Energu Pro курица">
+        </picture>
+      </div>
+
       <div class="promo__container">
         <div class="promo__wrapper-text">
           <h2 class="promo__title">Функциональное<br> питание&nbsp;для&nbsp;котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-        </div>
-
-        <div class="promo__wrapper-img">
-          <picture>
-            <source media="(min-width: 1280px)" width="552" height="499" type="image/png" srcset="images/promo-decktop@1x.png, images/promo-decktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo-tablet@1x.png, images/promo-tablet@2x.png 2x">
-            <img class="promo__images" src="images/promo@1x.png" srcset="images/promo@2x.png" width="280" height="270" alt="Баночка питания Cat Energu Pro курица">
-          </picture>
         </div>
         <a class="button button--promo" href="form.html">подобрать программу</a>
       </div>
@@ -134,20 +142,25 @@
           <p class="example__text example__text--price">Затраты на питание:
             <span class="example__price">15 000 руб.</span>
           </p>
-
         </div>
 
         <div class="example__slider">
 
           <div class="example__slider-left">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.webp, images/cat-fat-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="images/cat-fat-mobile@1x.webp, images/cat-fat-mobile@2x.webp 2x" width="280" height="256">
+
               <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-fat-tablet@1x.png, images/cat-fat-tablet@2x.png 2x">
-            <img class="example__img-fat" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              <img class="example__img-fat" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
             </picture>
           </div>
 
           <div class="example__slider-right">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-skinny-tablet@1x.webp, images/cat-skinny-tablet@2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="images/cat-skinny-mobile@1x.webp, cat-skinny-mobile@2x.webp 2x" width="280" height="256">
+
               <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-skinny-tablet@1x.png, images/cat-skinny-tablet@2x.png 2x">
               <img class="example__img-skinny" src="images/cat-skinny-mobile@1x.png" srcset="images/cat-skinny-mobile@2x.png 2x" width="280" height="256" alt="Тощий кот">
             </picture>
@@ -179,6 +192,10 @@
             title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
           </iframe>
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="images/map-desktop@1x.webp,  images/map-desktop@2x.webp 2x" width="1280" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp, images/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp, images/map-mobile@2x.webp 2x" width="320" height="362">
+
             <source media="(min-width: 1280px)" width="1280" height="400" type="image/png" srcset="images/Map-desktop@1x.png, images/Map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/Map-tablet@1x.png, images/Map-tablet@2x.png 2x">
             <img class="contacts__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">

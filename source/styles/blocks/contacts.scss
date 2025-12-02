@@ -88,6 +88,7 @@
   list-style-type: none;
   font-style: normal;
   padding: 0;
+  display: block;
 
   @media (min-width: $tablet-width) {
     text-align: right;
@@ -139,7 +140,12 @@
   width: 100%;
   min-height: 362px;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .contacts iframe {

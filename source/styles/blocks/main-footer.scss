@@ -35,6 +35,7 @@
 .main-footer__logo {
   margin: 0 auto;
   padding: 38px 0 0;
+  display: block;
 
   &:hover,
   &:focus {
@@ -95,6 +96,7 @@
 
 .main-footer__copyright-img {
   margin-left: auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;

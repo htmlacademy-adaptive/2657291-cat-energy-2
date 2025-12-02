@@ -287,12 +287,13 @@
   border-radius: 2px;
   padding: 0;
   border: transparent;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 2%;
     left: 49.5%;
-    height: 100%;
+    height: 512px;
     width: 4px;
     background-color: rgba(102, 102, 102, 1);
     border-radius: 2px;
@@ -304,7 +305,7 @@
     position: absolute;
     top: 12px;
     left: 48%;
-    height: 82%;
+    height: 512px;
     width: 4px;
     background-color: rgba(102, 102, 102, 1);
     border-radius: 2px;
@@ -323,8 +324,8 @@
     mask-image: url("/icons/stack-vector.svg");
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-size: 24px;
     background-color: rgba(102, 102, 102, 1);
+    mask-size: 24px;
   }
 
   &::before {
@@ -340,14 +341,22 @@
     background-color: rgba(255, 255, 255, 1);
   }
 
-  &:hover {
-    background-color: rgba(104, 183, 56, 1);
-    filter: invert(47%) sepia(85%) saturate(1337%) hue-rotate(87deg) brightness(97%) contrast(93%);
+  &:hover::before {
+    border-color: rgba(104, 183, 56, 1);
   }
 
-  &:active {
+  &:hover,
+  &:hover::after {
+    background-color: rgba(104, 183, 56, 1);
+  }
+
+  &:active::before {
+    border-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active,
+  &:active::after {
     background-color: rgba(94, 170, 47, 1);
-    opacity: 60%;
   }
 }
 
@@ -410,6 +419,7 @@
 
 .example__img-fat {
   object-fit: cover;
+  display: block;
 }
 
 .example__slider-right {
@@ -445,4 +455,5 @@
   object-fit: cover;
   position: relative;
   right: 100%;
+  display: block;
 }

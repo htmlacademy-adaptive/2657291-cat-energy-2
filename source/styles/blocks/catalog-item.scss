@@ -32,6 +32,11 @@
   }
 }
 
+.catalog-item__title a {
+  color: rgba(34, 34, 34, 1);
+  cursor: pointer;
+}
+
 .catalog-item__text-wrapper {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -61,6 +66,10 @@
   }
 }
 
+.catalog-item__img-wrapper a {
+  cursor: pointer;
+}
+
 .catalog-item__title {
   position: relative;
   font-family: $primary-font;
@@ -79,7 +88,7 @@
     margin-bottom: 18px;
     font-size: 20px;
     line-height: 24px;
-    padding: 0 53px 0 50px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -177,29 +186,6 @@
   }
 }
 
-.button--order {
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  width: 100%;
-  border: solid 1px transparent;
-
-  @media (min-width: $tablet-width) {
-    padding: 10px 10px 8px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    padding: 10px;
-  }
-
-  &:hover {
-    background-color: rgba(94, 170, 47, 1);
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
 .catalog-item--special {
   display: flex;
   flex-direction: column;
@@ -214,33 +200,6 @@
     min-height: 429px;
     align-self: flex-end;
     padding: 25px 36px 20px;
-  }
-}
-
-.button--more {
-  background-color: rgba(242, 242, 242, 1);
-  display: block;
-  color: rgba(68, 68, 68, 1);
-  width: 280px;
-  margin: 0 auto;
-  padding: 10px 94px 10px 93px;
-
-  &:hover,
-  &:focus {
-    background-color: rgba(235, 235, 235, 1);
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 82px;
-    min-width: 250px;
-    width: 100%;
-    padding: 11px 10px 10px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    padding: 11px 30px 10px;
-    min-width: 0;
-    margin-top: 87px;
   }
 }
 
